@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+
+        <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="../css/login.css">
+
+        <script>
+            function setButton() {                
+                document.getElementsByName("btnLogin").style.visibility="visible";
+            }
+        </script>
+    </head>
+
+    <body>        
+        <div id="main-page">
+            <h1>Sign Up</h1>            
+            <a href="#">Already Have Acoount?</a>            
+            <form class="form-sign-up">
+                <label>E-Mail</label>
+                <input type="email" placeholder="e-mail">
+                <label>Password</label>
+                <input type="text" placeholder="create password">
+                <div class="agreement-check">
+                    <input type="checkbox" name="check" onclick="setButton()"><span>Accept The Agreement</span>
+                </div>                
+                <script>
+                    document.getElementsByName(btnLogin).style.visibility="hidden";
+                </script>
+                <input type="button" value="Sign-Up" name="btnLogin">
+            </form>            
+        </div>
+    </body>
+</html>
